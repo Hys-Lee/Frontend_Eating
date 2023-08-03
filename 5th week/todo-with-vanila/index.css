@@ -1,0 +1,118 @@
+body{
+    margin:70px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    
+}
+#title{
+    text-align: center;
+    /* margin: 20px; */
+    color: dimgray;
+    margin-bottom: 50px;
+}
+#content{
+    /* padding:20px; */
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin-top: 20px;
+}
+.todo-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid lightgrey;
+    border-radius: 3px;
+    padding: 0 5px;
+    
+}
+.todo-label{
+    font-size: 20px;
+    color:dimgrey;
+    font-weight: 500;
+}
+.todo-label-input{
+    /* background-color: black; */
+
+    margin: 0 1px;
+    padding:0;
+    font-size: 20px;
+    color:dimgrey;
+    flex-grow: 1;
+    border: none;
+    border-bottom: 1px solid dimgrey;
+    
+    
+}
+.todo-label-input:focus{
+    outline: none;
+}
+.todo-action{
+    background: none;
+    border: none;
+    background-color: lightblue;
+    border-radius: 10%;
+    color:white;
+    padding:5px 10px;
+    margin:2px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.cancelline{
+    text-decoration: line-through;
+}
+.completed{
+    display:none;
+    
+}
+.uncompleted{
+    background-color: skyblue;
+    
+}
+.delete{
+    background-color: deepskyblue;
+}
+
+#add-action-wrapper{
+    
+    margin-top: 48px;
+    text-align: center;
+    height:48px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+#add-action{
+    background: none;
+    border: none;
+    margin:0;
+    padding:0;
+    width:48px; 
+     height:48px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    /* box-shadow: 0 0 10px lightgray; */
+    font-size: 30px;
+    color:white;
+    
+}
+#add-text{
+    
+    font-size: 15px;
+    margin-right: 10px;
+    padding:5px;
+    border: none;
+    border-bottom: 1px solid dodgerblue;
+    flex-grow:1;
+    
+    
+}
+#add-text:focus{
+    outline:none
+}
