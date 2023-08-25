@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.js": "/static/js/main.e5c2f964.js",
-    "static/media/setting.svg": "/static/media/setting.3a88dd157c09477f524b385799819abb.svg",
-    "static/media/download.svg": "/static/media/download.09f0b6fed20414a8bba1aef18b918eab.svg",
-    "static/media/search.svg": "/static/media/search.509c961f8eb994dd8d221c890786dccd.svg",
-    "static/media/e-learning.svg": "/static/media/e-learning.1c48b4596fbeb02d3d5565f865664b9a.svg",
-    "static/media/star.svg": "/static/media/star.1676c4cb795767f7e1566622388d6fff.svg",
-    "static/media/memo.svg": "/static/media/memo.9b70ee0ba3b50365d2b67eaf390fd530.svg",
-    "static/media/message.svg": "/static/media/message.f99f480c59694ec050de4841c958833b.svg",
-    "static/media/menu_dot.svg": "/static/media/menu_dot.adf3c7dba0a9a4e0ce3fc3313f03b230.svg",
-    "static/media/trash.svg": "/static/media/trash.91b8d8a50a3b03dfcbc6062aeaac029a.svg",
-    "static/media/empty_page.svg": "/static/media/empty_page.c2714e5c935c7aec17339c3a1e33770d.svg",
-    "index.html": "/index.html",
-    "static/media/profiles.svg": "/static/media/profiles.2c2714e377b541820385f324cb5c84ef.svg",
-    "static/media/quick_memo.svg": "/static/media/quick_memo.e3dc9e75719f30ef5c27838b8e110954.svg",
-    "static/media/double_left.svg": "/static/media/double_left.7a04e6f5ed92983dcaa4060952dc3c23.svg",
-    "static/media/clock.svg": "/static/media/clock.8842a558fc8ef570a27cb98fabcdcf9a.svg",
-    "static/media/home.svg": "/static/media/home.ee4c6e628f15d97747bc2d2d5dfa1795.svg",
-    "static/media/plus.svg": "/static/media/plus.4e252f83ab530f1b67383f58e81cb7e2.svg",
-    "static/media/shapes.svg": "/static/media/shapes.12470f51c73ca7431b7178d9dd1f3017.svg",
-    "static/media/larger_than.svg": "/static/media/larger_than.3be11def72eb93b428b1cf91c687ef67.svg",
-    "static/media/just_plus.svg": "/static/media/just_plus.37dc09f46faaf3eb898765b6e7238276.svg",
-    "main.e5c2f964.js.map": "/static/js/main.e5c2f964.js.map"
+    "main.js": "/make_notion/static/js/main.9d495383.js",
+    "static/media/setting.svg": "/make_notion/static/media/setting.3a88dd157c09477f524b385799819abb.svg",
+    "static/media/download.svg": "/make_notion/static/media/download.09f0b6fed20414a8bba1aef18b918eab.svg",
+    "static/media/search.svg": "/make_notion/static/media/search.509c961f8eb994dd8d221c890786dccd.svg",
+    "static/media/e-learning.svg": "/make_notion/static/media/e-learning.1c48b4596fbeb02d3d5565f865664b9a.svg",
+    "static/media/star.svg": "/make_notion/static/media/star.1676c4cb795767f7e1566622388d6fff.svg",
+    "static/media/memo.svg": "/make_notion/static/media/memo.9b70ee0ba3b50365d2b67eaf390fd530.svg",
+    "static/media/message.svg": "/make_notion/static/media/message.f99f480c59694ec050de4841c958833b.svg",
+    "index.html": "/make_notion/index.html",
+    "static/media/menu_dot.svg": "/make_notion/static/media/menu_dot.adf3c7dba0a9a4e0ce3fc3313f03b230.svg",
+    "static/media/trash.svg": "/make_notion/static/media/trash.91b8d8a50a3b03dfcbc6062aeaac029a.svg",
+    "static/media/empty_page.svg": "/make_notion/static/media/empty_page.c2714e5c935c7aec17339c3a1e33770d.svg",
+    "static/media/profiles.svg": "/make_notion/static/media/profiles.2c2714e377b541820385f324cb5c84ef.svg",
+    "static/media/quick_memo.svg": "/make_notion/static/media/quick_memo.e3dc9e75719f30ef5c27838b8e110954.svg",
+    "static/media/double_left.svg": "/make_notion/static/media/double_left.7a04e6f5ed92983dcaa4060952dc3c23.svg",
+    "static/media/clock.svg": "/make_notion/static/media/clock.8842a558fc8ef570a27cb98fabcdcf9a.svg",
+    "static/media/home.svg": "/make_notion/static/media/home.ee4c6e628f15d97747bc2d2d5dfa1795.svg",
+    "static/media/plus.svg": "/make_notion/static/media/plus.4e252f83ab530f1b67383f58e81cb7e2.svg",
+    "static/media/shapes.svg": "/make_notion/static/media/shapes.12470f51c73ca7431b7178d9dd1f3017.svg",
+    "static/media/larger_than.svg": "/make_notion/static/media/larger_than.3be11def72eb93b428b1cf91c687ef67.svg",
+    "static/media/just_plus.svg": "/make_notion/static/media/just_plus.37dc09f46faaf3eb898765b6e7238276.svg",
+    "main.9d495383.js.map": "/make_notion/static/js/main.9d495383.js.map"
   },
   "entrypoints": [
-    "static/js/main.e5c2f964.js"
+    "static/js/main.9d495383.js"
   ]
 }
