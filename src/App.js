@@ -1,7 +1,7 @@
 import Header from './headers_components/Header';
 import Sidebar from './headers_components/Sidebar';
 import styled from "styled-components"
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import MainBody from './main_componenets/MainBody';
 
 // import './App.css';
@@ -56,17 +56,9 @@ export default function App() {
   const [sideSignals, setSideSignals] = useState({clicked:false, hovered:false});
   const [totalBedgeCount, setTotalBedgeCounts] = useState(0);
   const [scrollPrevented, setScrollPrevented] = useState(false);
-  const [coverZindex, setCoverZindex]  = useState(-1);
+  const [coverZindex, setCoverZindex]  = useState(-5); // 적당한 음수
 
-  function handleCoverZindex(hide){
-    if(hide){
-      setCoverZindex(5);  // 안 보일 임의 값
-      console.log("hide");
-    }else{
-      setCoverZindex(-5);
-      console.log("show");
-    }
-  }
+
 
   if(scrollPrevented){/// 나중에 처리
     console.log("hovering!!");
@@ -77,8 +69,8 @@ export default function App() {
   return (
     <div>
       <StyledApp 
-        onKeyDown={()=>{handleCoverZindex(true)}}
-        onMouseMove={()=>{handleCoverZindex(false)}}
+        onKeyDown={()=>{coverZindex<0&&setCoverZindex(-1*coverZindex)}}
+        onMouseMove={()=>{coverZindex>0&&setCoverZindex(-1*coverZindex);}}
       >
         
         {sideSignals.clicked&&<Sidebar onHoveredMouse={(newScrollPrevented)=>{setScrollPrevented(newScrollPrevented)}}  sideSignals={sideSignals}onClose={newSideSignals=>{setSideSignals(newSideSignals)}}/>}

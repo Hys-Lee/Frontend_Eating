@@ -13,7 +13,7 @@ const StyledMainBody = styled.div`
     flex-direction:column;
     align-items:center;
     
-    /* width:100%; */
+    /* width:90%; */
 
     //test//
     overflow-y:hidden;
@@ -21,7 +21,12 @@ const StyledMainBody = styled.div`
 `;
 const TitleBox = styled.div`
     width:90%;
-    &>textarea{
+    margin:5px;
+    &>div{
+        height:100px;
+        font-size:5em;
+    }
+    /* &>textarea{
         outline:none;
         resize:none;
 
@@ -30,16 +35,26 @@ const TitleBox = styled.div`
         font-family:'Malgun gothic';
         font-weight:900;
         
-        width:700px;
+        /* width:700px; */
         
         overflow-y:visible; 
-    }
+    } */
 `;
-
+const ParagraphBox=styled.div`
+    width:90%;
+`;
+const initContent={
+    0:{
+        "time":"0",
+        text:"wake up",
+        checked:true
+    }
+};
 export default function MainBody({sideSignals, onHover}){
     const widthCheckerIdRef = useRef(null); // 있어야하나?
     const [fixedVeiwportWidth,setFixedViewportWidth ] = useState("100%");
-    
+    const [contents, setContents] = useState(initContent);
+    // 1초마다 viewport 체크
     useEffect(()=>{
         let prevViewportWidth =fixedVeiwportWidth;
         let currViewportWidth = fixedVeiwportWidth;
@@ -59,13 +74,23 @@ export default function MainBody({sideSignals, onHover}){
 
         },1000)
         console.log(widthCheckerIdRef.current);
-        return ()=>{clearInterval(widthCheckerIdRef.current)};
     });
+
+
+
 
     let tmpArr = [];
     for (let i=0;i<500;i++){
-        tmpArr.push(i);
+        localStorage.setItem(`${i}`, i);
+        tmpArr.push(localStorage.getItem(`${i}`));
     }
+
+
+
+    function addTodo(){
+        localStorage.setItem()
+    }
+
     return(<>
         <TriggerBox 
                     sideSignals={sideSignals} 
@@ -76,11 +101,14 @@ export default function MainBody({sideSignals, onHover}){
             <TitleBox
                 
             >
-                <Block viewportWidth={fixedVeiwportWidth}/>
+                <Block  isTItle={true}>Todo</Block>
             </TitleBox>
-            {tmpArr.map((attr)=>{
-                return <div >{attr}</div>
-            })}
+            <ParagraphBox>
+                {tmpArr.map((attr, index)=>{
+                    return <Block content={contents[index]} onContent={setContents}  isTItle={false}>{attr}</Block>
+                })}
+            </ParagraphBox>
+            
         </StyledMainBody>
     </>);
 }
